@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background-color:black;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      width: 80vw;
+      padding: 0;
+      height: 80vh;
+    }
+
+    
+
+    .text-content {
+      width: 50%;
+      background-color: #141a26;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-content h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+    }
+
+    .text-content p {
+      font-size: 16px;
+      margin-bottom: 40px;
+      color: #b0b4be;
+    }
+
+    .text-content .stats {
+      display: flex;
+      gap: 40px;
+    }
+
+    .text-content .stats div h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .text-content .stats div p {
+      font-size: 12px;
+      color: #7a7f89;
+      margin-top: 5px;
+    }
+
+    .image-container img {
+      width: 40vw;
+      border-radius: 10px;
+      background-color: pink;
+      height: 70vh;
+    }
+
+    @media screen and (max-width: 720px) {
+      .container {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+
+      .text-content {
+        height: auto;
+        width: 100%;
+        padding-top: 1.5rem;
+      }
+
+      body {
+        height: auto;
+      }
+
+      .image-container img {
+        width: 80vw;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .text-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .container {
+        width: 100vw;
+      }
+
+      .image-container img {
+        width: 100vw;
+      }
+
+      .text-content p {
+        text-align: center;
+      }
+
+      /* body {
+        display: block;
+        margin: 0;
+        padding: 0;
+      } */
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-content">
+      <h2>Get <span style="color: rgb(209, 100, 215);">insights</span> that help <br> your business grow.</h2>
+
+      <p>Discover the benefits of data analytics and make <br> better decisions regarding revenue, customer <br>
+        experience, and overall efficiency.</p>
+
+      <div class="stats">
+        <div>
+          <h3>10k+</h3>
+          <p>COMPANIES</p>
+        </div>
+
+        <div>
+          <h3>314</h3>
+          <p>TEMPLATES</p>
+        </div>
+
+        <div>
+          <h3>12m+</h3>
+          <p>QUERIES</p>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="./images/image-header-desktop.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
